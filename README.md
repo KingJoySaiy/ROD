@@ -1,7 +1,9 @@
 # R.O.D.
 c/c++
+
 ##[重要模板&库函数]
 [——薛翻天]]
+
 #一、小技巧
 1. `#include<bits/stdc++.h>`包含一切头文件
 2. windows输入EOF	Enter --> Ctrl+Z --> Enter
@@ -125,9 +127,11 @@ string a,b,c;
 #八、STL模板库！！！！！！
 `xxx<xxx>::iterator  p`			正向迭代器`a.begin()，a.end()，p++`
 `xxx<xxx>::reverse_iterator  p`	反向迭代器`a.rbegin()，a.rend()，p++`
+
 ####1. queue		队列（1）
 `queue<int>a`				声明队列
 `priority_queue<int>b`		声明优先队列
+
 ####2. stack			栈（2）
 `stack<int>a`			声明栈
 ####3. vector		数组/向量（3）
