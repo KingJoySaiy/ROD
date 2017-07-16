@@ -18,49 +18,46 @@ c/c++
 # 二、string.h	 字符数组
 char a[],b[]
 * `strlen(a)`					返回a字符串的长度
-* `strcat(a,b)`				b字符串接到a后面
-*`strncat(a,b,x)`			把b的前x个字符接到a后面
+* `strcat(a,b)`				    b字符串接到a后面
+* `strncat(a,b,x)`			    把b的前x个字符接到a后面
 * `strcpy(a,b)` 				b字符串复制给a
-`strncpy(a,b,x)`			b字符串从左往右共x个字符复制给a
-`strcmp(a,b)`				按ASCII码值比较大小，a在b后则返回正数，等于即0，否则负数
-`strrev(a)`					把字符串a逆置（倒序）
-`strupr (a)`					字符串中所有小写字母转换为大写
-`strlwr(a)`					字符串中所有大写字母转换为小写
-`strchr(a,’?’)`				返回a中字符?第一次出现的首地址（左往右）
-`strrchr(a,’?’)`				返回a中字符?第一次出现的首地址（右往左）
-`strstr(a,”??”)`				返回a中字符串??第一次出现的首地址（大小写敏感）
-`stristr(a,”??”)`				返回a中字符串??第一次出现的首地址（大小写不敏感）
-`memset(a,’?’,x)`			把a的前x个字节的值全部替换为’?’，中间为0表示清空成NULL
-
+* `strncpy(a,b,x)`			    b字符串从左往右共x个字符复制给a
+* `strcmp(a,b)`			    	按ASCII码值比较大小，a在b后则返回正数，等于即0，否则负数
+* `strrev(a)`					把字符串a逆置（倒序）
+* `strupr (a)`					字符串中所有小写字母转换为大写
+* `strlwr(a)`					字符串中所有大写字母转换为小写
+* `strchr(a,’?’)`				返回a中字符?第一次出现的首地址（左往右）
+* `strrchr(a,’?’)`				返回a中字符?第一次出现的首地址（右往左）
+* `strstr(a,”??”)`				返回a中字符串??第一次出现的首地址（大小写敏感）
+* `stristr(a,”??”)`				返回a中字符串??第一次出现的首地址（大小写不敏感）
+* `memset(a,’?’,x)`		    	把a的前x个字节的值全部替换为’?’，中间为0表示清空成NULL
 
 # 三、ctype.h		测试字符
-`isdigit(x)`					判断x是否是数字阿拉伯数字，是返回非零，否则返回0，下同
-`isalpha(x)`					判断x是否是英文字母
-`isalnum(x)`					判断x是否是阿拉伯数字或英文字母
-`islower(x)`					判断x是否是小写字母
-`isupper(x)`					判断x是否是大写字母
-`isascii(x)`					判断x是否是ASCII码（0~127）
-`tolower(x)`					若x是大写字母，则返回小写字母
-`toupper(x)`					若x是小写字母，则返回大写字母
-
-
+* `isdigit(x)`					判断x是否是数字阿拉伯数字，是返回非零，否则返回0，下同
+* `isalpha(x)`					判断x是否是英文字母
+* `isalnum(x)`					判断x是否是阿拉伯数字或英文字母
+* `islower(x)`					判断x是否是小写字母
+* `isupper(x)`					判断x是否是大写字母
+* `isascii(x)`					判断x是否是ASCII码（0~127）
+* `tolower(x)`					若x是大写字母，则返回小写字母
+* `toupper(x)`					若x是小写字母，则返回大写字母
 
 # 四、stdlib.h		标准库
 char str[] 
-`itoa(n,str,k)`				表示把整数n转换成k进制并赋给字符串str
-`atoi(str)`				返回字符串转换为int型的值
-`atof(str)`					返回字符串转换为double型的值
-`atol(str)`					返回字符串转换为long型的值
-`atoll(str)`					返回字符串转换为long long型的值
-`malloc(x)`					分配x个字节的内存空间，返回存储区起始地址的指针，类型为void*，可以强制转换为任何类型的指针
-`calloc(n,x)`				分配n个大小为x字节的空间，同上
-`realloc(str,x)`				把malloc或calloc分配的str指向的存储空间的大小改为x
-`free(str)`					释放动态开辟的str指向的内存空间
-`rand()%(y-x+1)+x	`		随机产生一个[x,y]区间里的数
-`srand((size_t)time(NULL))`		随机数发生器的初始化,用到time.h
-`labs(long x)`				返回长整型参数的绝对值
-`abort();	`					异常终止程序
-`qsort(a,n,sizeof(int),cmp)`	对序列a快速排序。cmp函数如下：
+* `itoa(n,str,k)`			    	表示把整数n转换成k进制并赋给字符串str
+* `atoi(str)`				        返回字符串转换为int型的值
+* `atof(str)`				    	返回字符串转换为double型的值
+* `atol(str)`				    	返回字符串转换为long型的值
+* `atoll(str)`					返回字符串转换为long long型的值
+* `malloc(x)`					    分配x个字节的内存空间，返回存储区起始地址的指针，类型为void*，可以强制转换为任何类型的指针
+* `calloc(n,x)`				    分配n个大小为x字节的空间，同上
+* `realloc(str,x)`				把malloc或calloc分配的str指向的存储空间的大小改为x
+* `free(str)`					    释放动态开辟的str指向的内存空间
+* `rand()%(y-x+1)+x	`		    随机产生一个[x,y]区间里的数
+* `srand((size_t)time(NULL))`		随机数发生器的初始化,用到time.h
+* `labs(long x)`				    返回长整型参数的绝对值
+* `abort();	`					异常终止程序
+* `qsort(a,n,sizeof(int),cmp)`	对序列a快速排序。cmp函数如下：
 ```c++
 int cmp(const void *a, const void *b)
 {
