@@ -33,7 +33,7 @@ char a[],b[]
 `memset(a,’?’,x)`			把a的前x个字节的值全部替换为’?’，中间为0表示清空成NULL
 
 
-#三、ctype.h		测试字符
+# 三、ctype.h		测试字符
 `isdigit(x)`					判断x是否是数字阿拉伯数字，是返回非零，否则返回0，下同
 `isalpha(x)`					判断x是否是英文字母
 `isalnum(x)`					判断x是否是阿拉伯数字或英文字母
@@ -45,7 +45,7 @@ char a[],b[]
 
 
 
-#四、stdlib.h		标准库
+# 四、stdlib.h		标准库
 char str[] 
 `itoa(n,str,k)`				表示把整数n转换成k进制并赋给字符串str
 `atoi(str)`				返回字符串转换为int型的值
@@ -68,7 +68,7 @@ int cmp(const void *a, const void *b)
     //return *(int *)b - *(int *)a; 由大到小排序
 }
 ```
-#五、stdio.h		标准输入输出
+# 五、stdio.h		标准输入输出
 char str[]；FILE *fp；char ch
 `sscanf(str,”%s %d”,str1,&x)`	把字符串str拆分成str1和x
 `sprintf(str,”%s %d”,str1,x)`	把str1和x赋值给字符串str
@@ -89,6 +89,7 @@ char str[]；FILE *fp；char ch
 **w+** 		打开可读写文件，文件存在则重写，不存在则新建
 **a**	 	以附加方式打开只写文件，文件存在则从末尾开始写入，否则新建
 **a+**		以附加方式打开可读写文件，文件存在则从末尾开始写入，否则新建
+
 # 六、algorithm		演算法(STL)
 int a[n],b[];string str1,str2
 `swap(a,b)`					交换两个对象的值
@@ -107,7 +108,8 @@ int a[n],b[];string str1,str2
 `lower_bound(a,a+n,x)-a`	返回>=x的第一个元素的迭代器，减去受元素的迭代器即表示数组下标。若x比a[0]小则返回0，若x比a[n-1]大则返回n。（前提：a为非递减序列）
 `upper_bound(a,a+n,x)-a`	返回>x的第一个元素的地址。
 `binary_search(a,a+n,x)`	判断序列中是否有x，返回布尔值
-#七、string		字符串型(STL)
+
+# 七、string		字符串型(STL)
 string a,b,c;
 `a.find(b)`					在a中查找子串b第一次出现的位置，查找失败返回std::string::npos，强制转化为int值-1
 `a.rfind(b)`					在a 中查找子串b 最后一次出现的位置，查找失败返回-1，需要强制转化
@@ -124,17 +126,17 @@ string a,b,c;
 `a.push_back(‘x’)`			把单个字符x放到a的末尾
 
 
-#八、STL模板库！！！！！！
+# 八、STL模板库！！！！！！
 `xxx<xxx>::iterator  p`			正向迭代器`a.begin()，a.end()，p++`
 `xxx<xxx>::reverse_iterator  p`	反向迭代器`a.rbegin()，a.rend()，p++`
 
-####1. queue		队列（1）
+#### 1. queue		队列（1）
 `queue<int>a`				声明队列
 `priority_queue<int>b`		声明优先队列
 
-####2. stack			栈（2）
+#### 2. stack			栈（2）
 `stack<int>a`			声明栈
-####3. vector		数组/向量（3）
+#### 3. vector		数组/向量（3）
 `vector<int>a(n)`			声明初始大小为n的向量，n可省去
 `vector<int>a(n,x)`			初始大小为n且值都是x的向量
 `vector<int>a(tmp)`			用向量tmp初始化a
@@ -142,13 +144,14 @@ string a,b,c;
 `vector<int>a(b,b+n)`		用数组b初始化a
 #### 4. set				集合（4）
 `set<int>a`声明集合
-####5. utility			对组（5）
+#### 5. utility			对组（5）
 `pair<string,int> a`			声明一个对组（有2个元素的结构体）
 `pair<int,pair<int,int> >a`	声明有3个元素的结构体
-####6. map			映射（6）
+#### 6. map			映射（6）
 `map<string,int>a`			声明一个从string类（key）到int类（value）的映射，自动按key升序排序
 `multimap<string,int>a`		声明一个映射（允许一个键对应多个值）
-##具体实现:
+
+## 具体实现:
 `a.push_back()`				末尾添加元素（3）
 `a.push()`				末尾添加元素（1，2）
 `a.size()	`					返回队列中元素的个数（1，2，3，4，6）
@@ -181,7 +184,8 @@ string a,b,c;
 `a[key]=value`				插入数据（6）
 `a.insert(map<string,int>::value_type("b",2))`		插入数据（6）
 `a.insert(make_pair(“b”,2))`						插入数据（6）
-#九、limits.h		数据类型极值
+
+# 九、limits.h		数据类型极值
 `SHRT_MIN`				最小short值
 `SHRT_MAX	`			最大short值
 `USHRT_MAX	`		最大无符号short
@@ -199,9 +203,7 @@ string a,b,c;
 `UCHAR_MAX`			最大无符号字符
 `MB_LEN_MAX	`		多字节字符最多包含的字符数
 
-
-
-#十、iomanip		操纵输入输出
+# 十、iomanip		操纵输入输出
 `cout<<setw(x)<<3`			把3按宽度为x输出（默认右对齐）
 `cout<<setfill('x')	`		填充字符x
 `cout<<left	`				改为左对齐
@@ -212,7 +214,8 @@ string a,b,c;
 `cout<<setbase(x)	`		以x进制输出（x只能是8,10,16）
 `cout<<setprecision(x)`		浮点数保留x位有效数字（默认为6）
 `cout<<fixed<<setprecision(x)	`保留小数点后x位
-#十一、fstream		文件输入输出流
+
+# 十一、fstream		文件输入输出流
 open(const char* filename,int mode,int access)打开文件
 如果open函数只有文件名一个参数，则是以读/写普通文件打开
 打开方式（mode）：
@@ -232,7 +235,7 @@ ios::trunc：　 		//如果文件存在，把文件长度设为0
 参考：
 <http://www.cnblogs.com/shaoguobao/archive/2011/04/15/2017413.html>
 
-#十二、stddef.h		标准宏及类型的定义
+# 十二、stddef.h		标准宏及类型的定义
 null						NULL
 size_t						unsigned int（sizeof操作符的结果类型）
 ptrdiff_t					int（表示指针相减的结果类型）
