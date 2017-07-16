@@ -17,8 +17,8 @@ c/c++
 
 # 二、string.h	 字符数组
 char a[],b[]
-`strlen(a)`					返回a字符串的长度
-`strcat(a,b)`				b字符串接到a后面
+* `strlen(a)`					返回a字符串的长度
+* `strcat(a,b)`				b字符串接到a后面
 `strncat(a,b,x)`			把b的前x个字符接到a后面
 `strcpy(a,b)` 				b字符串复制给a
 `strncpy(a,b,x)`			b字符串从左往右共x个字符复制给a
