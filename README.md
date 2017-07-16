@@ -225,9 +225,9 @@ open(const char* filename,int mode,int access)打开文件，
 <http://www.cnblogs.com/shaoguobao/archive/2011/04/15/2017413.html>
 
 # 十二、stddef.h		标准宏及类型的定义
-null						NULL
-size_t						unsigned int（sizeof操作符的结果类型）
-ptrdiff_t					int（表示指针相减的结果类型）
-wchar_t					char（表示宽字符类型）
+* null						NULL
+* size_t						unsigned int（sizeof操作符的结果类型）
+* ptrdiff_t					int（表示指针相减的结果类型）
+* wchar_t					char（表示宽字符类型）
 
 
