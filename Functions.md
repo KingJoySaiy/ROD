@@ -1,5 +1,3 @@
-## [重要模板&库函数]
-
 # 一、小技巧
 1. `#include<bits/stdc++.h>`包含一切头文件 
 2. windows输入EOF	Enter --> Ctrl+Z --> Enter
