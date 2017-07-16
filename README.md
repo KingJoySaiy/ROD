@@ -1,10 +1,10 @@
 # R.O.D.
 c/c++
 
-##[重要模板&库函数]
+## [重要模板&库函数]
 [——薛翻天]]
 
-#一、小技巧
+# 一、小技巧
 1. `#include<bits/stdc++.h>`包含一切头文件
 2. windows输入EOF	Enter --> Ctrl+Z --> Enter
 3. 获得程序运行时间：(double)clock()/CLOCKS_PER_SEC（需要添加头文件time.h）
