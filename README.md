@@ -67,17 +67,17 @@ int cmp(const void *a, const void *b)
 ```
 # 五、stdio.h		标准输入输出
 char str[]；FILE *fp；char ch
-`sscanf(str,”%s %d”,str1,&x)`	把字符串str拆分成str1和x
-`sprintf(str,”%s %d”,str1,x)`	把str1和x赋值给字符串str
-`fscanf(fp,”%d”,&x)`			读取文件流fp中一个整数赋给x
-`fprintf(fp,”%s”,str)`			把字符串str存入文件流fp中
-`fgetc(fp)`						返回从文件流中读取的一个字符
-`fputc(ch,fp)	`				把字符ch写入文件流fp中
-`fopen(“c:\\new\\hello.txt”,”r”)	`以只读方式打开hello.txt,返回文件的首地址
-`fclose(fp)`						关闭文件流fp
-`fgets(str,n,fp)`				从字符流中读取n个字符存入str中
-`fputs(str,fp)`					把字符串str存入字符流fp中
-`freopen(“input.txt”,”r”,fp)`	不改变代码的情况下改变输入输出环境，对输入输出流进行重定向
+* `sscanf(str,”%s %d”,str1,&x)`	把字符串str拆分成str1和x
+* `sprintf(str,”%s %d”,str1,x)`	把str1和x赋值给字符串str
+* `fscanf(fp,”%d”,&x)`			读取文件流fp中一个整数赋给x
+* `fprintf(fp,”%s”,str)`			把字符串str存入文件流fp中
+* `fgetc(fp)`						返回从文件流中读取的一个字符
+* `fputc(ch,fp)	`				把字符ch写入文件流fp中
+* `fopen(“c:\\new\\hello.txt”,”r”)	`以只读方式打开hello.txt,返回文件的首地址
+* `fclose(fp)`						关闭文件流fp
+* `fgets(str,n,fp)`				从字符流中读取n个字符存入str中
+* `fputs(str,fp)`					把字符串str存入字符流fp中
+* `freopen(“input.txt”,”r”,fp)`	不改变代码的情况下改变输入输出环境，对输入输出流进行重定向
 **文件的调用一旦失败，则返回NULL**
 **r**		只读方式打开，文件必须存在
 **r+**		可读写方式，文件必须存在
@@ -89,98 +89,94 @@ char str[]；FILE *fp；char ch
 
 # 六、algorithm		演算法(STL)
 int a[n],b[];string str1,str2
-`swap(a,b)`					交换两个对象的值
-`max(a,b)`					返回两者中的较大者
-`min(a,b)	`				返回两者中的较小者
-`sort(a,a+n)	`				把序列按升序排序
-`reverse(a,a+n)`				把序列反转顺序
-`unique(a,a+n)`				删除序列中的重复元素，末尾出现重复
-`remove(a,a+n,x)`			删除序列中等于x的元素，末尾出现重复
-`equal(a,a+n,b)`				若两序列在标志范围内元素都相等，返回true，否则返回false,允许b序列元素比a多
-`fill(a,a+n,x)`				把a序列所有元素替换为x
-`count(a,a+n,x)`				返回序列a中x出现的次数
-`rotate(a,a+x,a+n)`			序列前x项与之后n-x项交换
-`includes(a,a+n,b,b+n)`		若a包含b，则返回true，否则返回false
-`next_permutation(a,a+n)`	按字典序生成下一个排列，若已是降序则返回false，否则返回true
-`lower_bound(a,a+n,x)-a`	返回>=x的第一个元素的迭代器，减去受元素的迭代器即表示数组下标。若x比a[0]小则返回0，若x比a[n-1]大则返回n。（前提：a为非递减序列）
-`upper_bound(a,a+n,x)-a`	返回>x的第一个元素的地址。
-`binary_search(a,a+n,x)`	判断序列中是否有x，返回布尔值
+* `swap(a,b)`					交换两个对象的值
+* `max(a,b)`					返回两者中的较大者
+* `min(a,b)	`				返回两者中的较小者
+* `sort(a,a+n)	`				把序列按升序排序
+* `reverse(a,a+n)`				把序列反转顺序
+* `unique(a,a+n)`				删除序列中的重复元素，末尾出现重复
+* `remove(a,a+n,x)`			删除序列中等于x的元素，末尾出现重复
+* `equal(a,a+n,b)`				若两序列在标志范围内元素都相等，返回true，否则返回false,允许b序列元素比a多
+* `fill(a,a+n,x)`				把a序列所有元素替换为x
+* `count(a,a+n,x)`				返回序列a中x出现的次数
+* `rotate(a,a+x,a+n)`			序列前x项与之后n-x项交换
+* `includes(a,a+n,b,b+n)`		若a包含b，则返回true，否则返回false
+* `next_permutation(a,a+n)`	按字典序生成下一个排列，若已是降序则返回false，否则返回true
+* `lower_bound(a,a+n,x)-a`	返回>=x的第一个元素的迭代器，减去受元素的迭代器即表示数组下标。若x比a[0]小则返回0，若x比a[n-1]大则返回n。（前提：a为非递减序列）
+* `upper_bound(a,a+n,x)-a`	返回>x的第一个元素的地址。
+* `binary_search(a,a+n,x)`	判断序列中是否有x，返回布尔值
 
 # 七、string		字符串型(STL)
 string a,b,c;
-`a.find(b)`					在a中查找子串b第一次出现的位置，查找失败返回std::string::npos，强制转化为int值-1
-`a.rfind(b)`					在a 中查找子串b 最后一次出现的位置，查找失败返回-1，需要强制转化
-`a.find_first_of(b)`			在a中查找b中任一字符第一次出现的位置
-`a.find_first_of(b)`			在a中查找b中任一字符最后一次出现的位置
-`a.compare(b)`				类似于strcmp，比较字符
-`a.assign(b,x,y)`			把char *b的下标自x开始宽为y的字符赋给a
-`a.append(b,x,y)`			把b下标自x开始宽为y的字符接在a后面
-`a.insert(x,b)`				a下标为x处插入b
-`a.replace(x,y,b)`			a下标自x开始宽为y的字符替换为b
-`a.erase(x,y)`				a下标自x开始宽为y的字符删除
-`a.substr(x,y)`				返回a下标自x开始宽为y的全部字符
-`a.size() / a.length()`	返回a的长度
-`a.push_back(‘x’)`			把单个字符x放到a的末尾
-
+* `a.find(b)`					在a中查找子串b第一次出现的位置，查找失败返回std::string::npos，强制转化为int值-1
+* `a.rfind(b)`					在a 中查找子串b 最后一次出现的位置，查找失败返回-1，需要强制转化
+* `a.find_first_of(b)`			在a中查找b中任一字符第一次出现的位置
+* `a.find_first_of(b)`			在a中查找b中任一字符最后一次出现的位置
+* `a.compare(b)`				类似于strcmp，比较字符
+* `a.assign(b,x,y)`			把char *b的下标自x开始宽为y的字符赋给a
+* `a.append(b,x,y)`			把b下标自x开始宽为y的字符接在a后面
+* `a.insert(x,b)`				a下标为x处插入b
+* `a.replace(x,y,b)`			a下标自x开始宽为y的字符替换为b
+* `a.erase(x,y)`				a下标自x开始宽为y的字符删除
+* `a.substr(x,y)`				返回a下标自x开始宽为y的全部字符
+* `a.size() / a.length()`	返回a的长度
+* `a.push_back(‘x’)`			把单个字符x放到a的末尾
 
 # 八、STL模板库！！！！！！
 `xxx<xxx>::iterator  p`			正向迭代器`a.begin()，a.end()，p++`
 `xxx<xxx>::reverse_iterator  p`	反向迭代器`a.rbegin()，a.rend()，p++`
-
 #### 1. queue		队列（1）
-`queue<int>a`				声明队列
-`priority_queue<int>b`		声明优先队列
-
+* `queue<int>a`				声明队列
+* `priority_queue<int>b`		声明优先队列
 #### 2. stack			栈（2）
-`stack<int>a`			声明栈
+* `stack<int>a`			声明栈
 #### 3. vector		数组/向量（3）
-`vector<int>a(n)`			声明初始大小为n的向量，n可省去
-`vector<int>a(n,x)`			初始大小为n且值都是x的向量
-`vector<int>a(tmp)`			用向量tmp初始化a
-`vector<int>a(tmp.begin(),tmp.end())	`	同上
-`vector<int>a(b,b+n)`		用数组b初始化a
+* `vector<int>a(n)`			声明初始大小为n的向量，n可省去
+* `vector<int>a(n,x)`			初始大小为n且值都是x的向量
+* `vector<int>a(tmp)`			用向量tmp初始化a
+* `vector<int>a(tmp.begin(),tmp.end())	`	同上
+* `vector<int>a(b,b+n)`		用数组b初始化a
 #### 4. set				集合（4）
-`set<int>a`声明集合
+* `set<int>a`声明集合
 #### 5. utility			对组（5）
-`pair<string,int> a`			声明一个对组（有2个元素的结构体）
-`pair<int,pair<int,int> >a`	声明有3个元素的结构体
+* `pair<string,int> a`			声明一个对组（有2个元素的结构体）
+* `pair<int,pair<int,int> >a`	声明有3个元素的结构体
 #### 6. map			映射（6）
-`map<string,int>a`			声明一个从string类（key）到int类（value）的映射，自动按key升序排序
-`multimap<string,int>a`		声明一个映射（允许一个键对应多个值）
-
+* `map<string,int>a`			声明一个从string类（key）到int类（value）的映射，自动按key升序排序
+* `multimap<string,int>a`		声明一个映射（允许一个键对应多个值）
 ## 具体实现:
-`a.push_back()`				末尾添加元素（3）
-`a.push()`				末尾添加元素（1，2）
-`a.size()	`					返回队列中元素的个数（1，2，3，4，6）
-`a.empty()`					判断队列是否为空，返回布尔值（1，2，3，4，6）
-`a.pop()	`					删除第一个元素（1，2）
-`a.front()	`				返回第一个元素的引用（1，3）
-`a.back()`				返回最后一个元素的引用（1，3）
-`a.top()`						返回最后一个元素（2）
-`a.max_size()`				返回最大容量（3，4，6）
-`a.resize(x)	`				把大小更改为x（3，4）
-`a.pop_back()`				末尾删除元素（3）
-`a.begin()`					初始位置的迭代器（3，4，6）
-`a.end()`						末尾位置的迭代器（3，4，6）
-`a.rbegin()	`				末尾位置的反向迭代器（3，4，6）
-`a.rend()	`				初始位置的反向迭代器（3，4，6）
-`a.data()	`				初始位置的指针（3）
-`a.clear()`					清空所有元素（3，4，6）
-`a.assign(b.brgin(),b.end())`	把b复制给a（3）
-`a.insert(x)	`				在a中插入x（4，6）
-`a.insert(a.begin(),n,x)`		在a.begin()前插入n个x，若n省去则插入一个x且返回x的迭代器（3）
-`a.insert(a.begin(),b.begin(),b.end())`在a.begin()前插入b的对应元素（3）
-`a.erase(a.begin(),a.end())`	把区间内的元素删去（3，4，6）
-`a.count(x)	`				返回a中x出现的次数（4，6）
-`a.lower_bound(x)`			返回>=x的第一个元素的迭代器（4，6）
-`a.upper_bound(x)`			返回>x的第一个元素的迭代器（4，6）
-`a.find(x)`					返回x元素的迭代器，若无x则返回a.end()（4，6）
-`make_pair(x,y)`			返回一个对组（x,y）,用于给pair赋值（5）
-`a.first`						访问pair的第一个元素（5）
-`a.second`					访问pair的第二个元素（5）
-`a[key]=value`				插入数据（6）
-`a.insert(map<string,int>::value_type("b",2))`		插入数据（6）
-`a.insert(make_pair(“b”,2))`						插入数据（6）
+* `a.push_back()`				末尾添加元素（3）
+* `a.push()`				末尾添加元素（1，2）
+* `a.size()	`					返回队列中元素的个数（1，2，3，4，6）
+* `a.empty()`					判断队列是否为空，返回布尔值（1，2，3，4，6）
+* `a.pop()	`					删除第一个元素（1，2）
+* `a.front()	`				返回第一个元素的引用（1，3）
+* `a.back()`				返回最后一个元素的引用（1，3）
+* `a.top()`						返回最后一个元素（2）
+* `a.max_size()`				返回最大容量（3，4，6）
+* `a.resize(x)	`				把大小更改为x（3，4）
+* `a.pop_back()`				末尾删除元素（3）
+* `a.begin()`					初始位置的迭代器（3，4，6）
+* `a.end()`						末尾位置的迭代器（3，4，6）
+* `a.rbegin()	`				末尾位置的反向迭代器（3，4，6）
+* `a.rend()	`				初始位置的反向迭代器（3，4，6）
+* `a.data()	`				初始位置的指针（3）
+* `a.clear()`					清空所有元素（3，4，6）
+* `a.assign(b.brgin(),b.end())`	把b复制给a（3）
+* `a.insert(x)	`				在a中插入x（4，6）
+* `a.insert(a.begin(),n,x)`		在a.begin()前插入n个x，若n省去则插入一个x且返回x的迭代器（3）
+* `a.insert(a.begin(),b.begin(),b.end())`在a.begin()前插入b的对应元素（3）
+* `a.erase(a.begin(),a.end())`	把区间内的元素删去（3，4，6）
+* `a.count(x)	`				返回a中x出现的次数（4，6）
+* `a.lower_bound(x)`			返回>=x的第一个元素的迭代器（4，6）
+* `a.upper_bound(x)`			返回>x的第一个元素的迭代器（4，6）
+* `a.find(x)`					返回x元素的迭代器，若无x则返回a.end()（4，6）
+* `make_pair(x,y)`			返回一个对组（x,y）,用于给pair赋值（5）
+* `a.first`						访问pair的第一个元素（5）
+* `a.second`					访问pair的第二个元素（5）
+* `a[key]=value`				插入数据（6）
+* `a.insert(map<string,int>::value_type("b",2))`		插入数据（6）
+* `a.insert(make_pair(“b”,2))`						插入数据（6）
 
 # 九、limits.h		数据类型极值
 `SHRT_MIN`				最小short值
