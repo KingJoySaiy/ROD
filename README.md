@@ -5,7 +5,7 @@ c/c++
 [——薛翻天]]
 
 # 一、小技巧
-1. `#include<bits/stdc++.h>`包含一切头文件
+1. `#include<bits/stdc++.h>`包含一切头文件 
 2. windows输入EOF	Enter --> Ctrl+Z --> Enter
 3. 获得程序运行时间：(double)clock()/CLOCKS_PER_SEC（需要添加头文件time.h）
 4. 文件输入输出`freopen(“input.txt”,”r”,stdin)；freopen(“output.txt”,”w”,stdout)；`
@@ -18,7 +18,7 @@ c/c++
 # 二、string.h	 字符数组
 char a[],b[]
 `strlen(a)`					返回a字符串的长度
-`strcat(a,b)`					b字符串接到a后面
+`strcat(a,b)`				b字符串接到a后面
 `strncat(a,b,x)`			把b的前x个字符接到a后面
 `strcpy(a,b)` 				b字符串复制给a
 `strncpy(a,b,x)`			b字符串从左往右共x个字符复制给a
