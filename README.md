@@ -1,8 +1,4 @@
-# R.O.D.
-c/c++
-
 ## [重要模板&库函数]
-[——薛翻天]]
 
 # 一、小技巧
 1. `#include<bits/stdc++.h>`包含一切头文件 
@@ -179,52 +175,52 @@ string a,b,c;
 * `a.insert(make_pair(“b”,2))`						插入数据（6）
 
 # 九、limits.h		数据类型极值
-`SHRT_MIN`				最小short值
-`SHRT_MAX	`			最大short值
-`USHRT_MAX	`		最大无符号short
-`INT _MIN	`				最小int
-`INT_MAX	`				最大int
-`UINT_MAX	`			最大无符号int
-`LONG_MIN`				最小long
-`LONG_MAX`				最大long
-`ULONG_MAX	`		最大无符号long
-`CHAR_BIT`				每个字符包含位数
-`CHAR_MIN	`			最小字符
-`CHAR_MAX	`			最大字符
-`SCHAR_MIN`				最小又符号字符
-`SCHAR_MAX`			最大有符号字符
-`UCHAR_MAX`			最大无符号字符
-`MB_LEN_MAX	`		多字节字符最多包含的字符数
+* `SHRT_MIN`				最小short值
+* `SHRT_MAX	`			最大short值
+* `USHRT_MAX	`		最大无符号short
+* `INT _MIN	`				最小int
+* `INT_MAX	`				最大int
+* `UINT_MAX	`			最大无符号int
+* `LONG_MIN`				最小long
+* `LONG_MAX`				最大long
+* `ULONG_MAX	`		最大无符号long
+* `CHAR_BIT`				每个字符包含位数
+* `CHAR_MIN	`			最小字符
+* `CHAR_MAX	`			最大字符
+* `SCHAR_MIN`				最小又符号字符
+* `SCHAR_MAX`			最大有符号字符
+* `UCHAR_MAX`			最大无符号字符
+* `MB_LEN_MAX	`		多字节字符最多包含的字符数
 
 # 十、iomanip		操纵输入输出
-`cout<<setw(x)<<3`			把3按宽度为x输出（默认右对齐）
-`cout<<setfill('x')	`		填充字符x
-`cout<<left	`				改为左对齐
-`cout<<right`				改为右对齐
-`cout<<dec`					以十进制输出，%d
-`cout<<hex`					以十六进制输出，%x
-`cout<<oct`					以八进制输出，%o
-`cout<<setbase(x)	`		以x进制输出（x只能是8,10,16）
-`cout<<setprecision(x)`		浮点数保留x位有效数字（默认为6）
-`cout<<fixed<<setprecision(x)	`保留小数点后x位
+* `cout<<setw(x)<<3`			把3按宽度为x输出（默认右对齐）
+* `cout<<setfill('x')	`		填充字符x
+* `cout<<left	`				改为左对齐
+* `cout<<right`				改为右对齐
+* `cout<<dec`					以十进制输出，%d
+* `cout<<hex`					以十六进制输出，%x
+* `cout<<oct`					以八进制输出，%o
+* `cout<<setbase(x)	`		以x进制输出（x只能是8,10,16）
+* `cout<<setprecision(x)`		浮点数保留x位有效数字（默认为6）
+* `cout<<fixed<<setprecision(x)	`保留小数点后x位
 
 # 十一、fstream		文件输入输出流
-open(const char* filename,int mode,int access)打开文件
-如果open函数只有文件名一个参数，则是以读/写普通文件打开
+open(const char* filename,int mode,int access)打开文件，
+如果open函数只有文件名一个参数，则是以读/写普通文件打开。
 打开方式（mode）：
-ios::app：　　　 	//以追加的方式打开文件 
-ios::ate：　　　 	//文件打开后定位到文件尾，ios:app就包含有此属性 
-ios::binary：　 		//以二进制方式打开文件，缺省的方式是文本方式。两种方式的区别见前文 
-ios::in：　　　 		//文件以输入方式打开（文件数据输入到内存） 
-ios::out：　　　 	//文件以输出方式打开（内存数据输出到文件） 
-ios::nocreate： 		//不建立文件，所以文件不存在时打开失败 
-ios::noreplace：		//不覆盖文件，所以打开文件时如果文件存在失败 
-ios::trunc：　 		//如果文件存在，把文件长度设为0
+* ios::app：　　　 	        以追加的方式打开文件 
+* ios::ate：　　　 	        文件打开后定位到文件尾，ios:app就包含有此属性 
+* ios::binary：　 		  以二进制方式打开文件，缺省的方式是文本方式。两种方式的区别见前文 
+* ios::in：　　　 		    文件以输入方式打开（文件数据输入到内存） 
+* ios::out：　　　      	文件以输出方式打开（内存数据输出到文件） 
+* ios::nocreate： 	      不建立文件，所以文件不存在时打开失败 
+* ios::noreplace：	      不覆盖文件，所以打开文件时如果文件存在失败 
+* ios::trunc：　 		      如果文件存在，把文件长度设为0
 打开文件的属性取值（access）,可以用“|”或者“+”把以上属性连接起来：
-0：普通文件，打开访问  
-1：只读文件  
-2：隐含文件  
-4：系统文件 
+* 0：普通文件，打开访问  
+* 1：只读文件  
+* 2：隐含文件  
+* 4：系统文件 
 参考：
 <http://www.cnblogs.com/shaoguobao/archive/2011/04/15/2017413.html>
 
