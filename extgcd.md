@@ -18,7 +18,7 @@ int gcd(int a,int b){
 
 判定有解之后，由于A,B,C存在公约数gcd(A,B)，则可分别除以gcd(A,B)。令`A'=A/gcd(A,B),B'=gcd(A,B)`,此时方程简化为`A'x+B'y=n`,考虑到此方程的解是方程`A'x+B'y=1`的n倍，所以不妨先求出后者的一组解，继而把解扩大n倍。
 
-根据贝祖定理，若方程`Ax+By=1`有解，则`gcd(A,B)=1`，即A,B互质。根据原有的欧几里德算法，假设已求得`Bx'+(AmodB)y'=gcd(A,B)`的解(x',y')，将取模运算公式`AmodB=A-(A/B)B`带入，得`Ay'+B(x'-(A/B)y')=gcd(A,B)`，而当B=0时，有`1A+0B=A=gcd(A,B)`作为终止条件，此时x',y'记为原方程的一组解。
+根据贝祖定理，若方程`Ax+By=1`有解，则`gcd(A,B)=1`，即A,B互质。根据原有的欧几里德算法，假设已求得`Bx'+(AmodB)y'=gcd(A,B)`的解(x',y')，将取模运算公式`AmodB=A-(A/B)B`带入，得`Ay'+B(x'-(A/B)y')=gcd(A,B)`，而当B=0时，有`1A+0B=A=gcd(A,B)`作为终止条件，此时x',y'即为原方程的一组解。
 ```c++
 void exgcd(int a,int b,int &x,int &y){
 	b?exgcd(b,a%b,y,x),y-=(a/b)*x:x=1,y=0;
