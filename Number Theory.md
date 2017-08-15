@@ -26,7 +26,7 @@
 
 
 ## 六、模板题（原根）
-<a href="https://www.51nod.com/onlineJudge/questionCode.html#!problemId=1135">来源：51nod #1135</a>
+<a href="https://www.51nod.com/onlineJudge/questionCode.html#!problemId=1135">来源：51nod #1135</a><br>
 题目大意：设m是正整数，a是整数，若a模m的阶等于φ(m)，则称a为模m的一个原根。给出1个质数P，找出P最小的原根。
 ```c++
 #include <bits/stdc++.h>
@@ -52,6 +52,7 @@ void init_prime(){
     }
 }
 LL power_mod(LL x,LL n,LL mod){
+
     LL res =1;
     while (n) {
         if(n & 1)res = res*x % mod;
@@ -61,6 +62,7 @@ LL power_mod(LL x,LL n,LL mod){
     return res;
 }
 void get_fact(int n){
+
     fact_cnt = 0;
     for(int i = 0 ; i< cnt && prime[i]*prime[i] <=n ; ++i ){
         if(n % prime[i] == 0){
@@ -72,12 +74,14 @@ void get_fact(int n){
 }
 
 bool check(int g){
+
     for(int i=0 ; i<fact_cnt ; ++i)
         if(power_mod(g,(p-1)/factor[i],p) ==1)return false;
     return true;
 }
 
 int proot(int p){
+
     get_fact(p-1);
     for(int i=2 ; i<p ; ++i)
         if(check(i))return i;
@@ -92,7 +96,7 @@ int main() {
 }
 ```
 ## 七、模板题（离散对数）
-<a href="http://www.spoj.com/problems/MOD/en/">来源：spoj MOD</a>
+<a href="http://www.spoj.com/problems/MOD/en/">来源：spoj MOD</a><br>
 题目大意：给定3个正整数x、y和z，可以通过快速幂模算法容易地找到k＝(x^y)%z。现在你的目标是求该算法的逆。给定3个正整数x、z和k，找到最小的非负整数y，使得k%z=(x^y)%z。
 ```c++
 #include <bits/stdc++.h>
@@ -100,6 +104,7 @@ using namespace std;
 typedef long long LL;
 
 LL power_mod(LL x,LL n, int mod){
+
     LL res =1;
     while (n) {
         if(n&1)res = res*x % mod;
