@@ -1,0 +1,156 @@
+#  一、同余定理
+如果两个整数a,b对整数m同余，即(a mod m)等于(b mod m)，((a-b) mod m)等于0，则称a与b对模m同余，记作`a ≡ b ( mod m )`。
+# 二、费马-欧拉定理
+如果a,m为整数，且a和m互质，则a的φ(m)次方对m取模恒等于1，记作 `a^φ(m) ≡ 1（mod m）`。其中φ(m)为m的欧拉函数，表示小于m的正整数中与m互质的数的个数。
+* 当m为质数时，φ(m)=m-1，所以此时 `a^(m-1) ≡ 1（mod m）`。
+# 三、数论阶
+## 1、定义
+在(a,m)=1的整数集中，任意n都满足`a^n ≡ 1 (mod m)`，则满足条件的最小整数r为a模m的阶。
+也就是说，满足a的n次方除以m余1的最小n是a模m的阶。记作`ord_m(a)`。
+## 2、求数论阶的方法
+ 先对m分解因子，设m=p1^r1*p2^r2…pk^rk ，然后将ri逐个相减并记为p，直到再减一个之后`a^p≠1(mod m)`。此时p即为a模m的阶。
+
+* φ(m)恒为ord_m(a)的整数倍，记作`ord_m(a)|φ(m)`。
+* `a^x ≡ 1 (mod m)`等价于`ord_m(a) | x`。
+* `a^x ≡ a^y ( mod m)`等价于`x ≡ y ( mod ord_m(a) )`。 
+# 四、原根
+## 1、定义
+如果1<g<p，且对于任意满足1<i<p的整数i，(g^i mod p)结果两两不同，则g是p的原根。
+当p为素数时，由于`ord_m(a)<=φ(m)`，则当`ord_m(a)=φ(m)`时，a时模m的原根。
+## 2、求原根的方法
+枚举1<g<p，当`g^(p-1) =1 (mod p) `仅有唯一解p-1时成立，则g时p的原根。
+* m（若存在）的原根数目为 **φ(φ(m))** 。
+* m有原根的充要条件：`m = 2, 4, p^n, 2p^n`，其中p为奇质数，n为任意正整数。
+# 五、离散对数（bsgs algorithm）
+
+
+
+# 六、模板题（原根）
+<a href="https://www.51nod.com/onlineJudge/questionCode.html#!problemId=1135">来源：51nod #1135</a>
+题目大意：设m是正整数，a是整数，若a模m的阶等于φ(m)，则称a为模m的一个原根。给出1个质数P，找出P最小的原根。
+```c++
+#include <bits/stdc++.h>
+using namespace std;
+const int maxn =2e5+10;
+typedef long long LL;
+
+int p,prime[maxn],cnt;
+int factor[maxn],fact_cnt;
+
+void init_prime(){
+
+    memset(prime,0,sizeof(prime));
+    cnt = 0;
+    for(int i = 2 ; i<maxn ; ++i){
+        if(!prime[i]){
+            prime[cnt++] = i;
+        }
+        for(int j =0 ; j<cnt && prime[j]*i<maxn ; ++j){
+            prime[prime[j]*i] = 1;
+            if(i % prime[j] == 0)break;
+        }
+    }
+}
+LL power_mod(LL x,LL n,LL mod){
+    LL res =1;
+    while (n) {
+        if(n & 1)res = res*x % mod;
+        x = x*x % mod;
+        n >>= 1;
+    }
+    return res;
+}
+void get_fact(int n){
+    fact_cnt = 0;
+    for(int i = 0 ; i< cnt && prime[i]*prime[i] <=n ; ++i ){
+        if(n % prime[i] == 0){
+            factor[fact_cnt++] = prime[i];
+            while (n%prime[i] == 0)n/=prime[i];
+        }
+    }
+    if(n!=1)factor[fact_cnt++] = n;
+}
+
+bool check(int g){
+    for(int i=0 ; i<fact_cnt ; ++i)
+        if(power_mod(g,(p-1)/factor[i],p) ==1)return false;
+    return true;
+}
+
+int proot(int p){
+    get_fact(p-1);
+    for(int i=2 ; i<p ; ++i)
+        if(check(i))return i;
+}
+
+int main() {
+
+    init_prime();
+    cin>>p;
+    cout << proot(p) << endl;
+    return 0;
+}
+```
+# 七、模板题（离散对数）
+<a href="http://www.spoj.com/problems/MOD/en/">来源：spoj MOD</a>
+题目大意：给定3个正整数x、y和z，可以通过快速幂模算法容易地找到k＝(x^y)%z。现在你的目标是求该算法的逆。给定3个正整数x、z和k，找到最小的非负整数y，使得k%z=(x^y)%z。
+```c++
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long LL;
+
+LL power_mod(LL x,LL n, int mod){
+    LL res =1;
+    while (n) {
+        if(n&1)res = res*x % mod;
+        x = x*x %mod;
+        n >>=1;
+    }
+    return res;
+}
+
+LL bsgs(LL A,LL C,LL mod){
+
+    A %= mod;
+    C %= mod;
+    if(C==1)return 0;
+    LL cnt =0;
+    LL tmp = 1;
+    for(LL g = __gcd(A,mod) ; g != 1 ; g = __gcd(A,mod)){
+        if(C % g)return -1;//不能整除
+        C /=g ; mod/=g ; tmp = tmp*A/g%mod;
+        ++cnt;
+        if(C == tmp)return cnt;
+    }
+    //大步小步a^xa^cnt=C (mod m)a^cnt = tmp;
+    LL T = (LL)sqrt(0.5+mod);
+    LL b = C;
+    map<LL,LL> hash;
+    hash[b] = 0;
+    for(int i=1 ; i<=T ; ++i){
+        b = b*A%mod;//当mod为LL时注意溢出
+        hash[b] = i;
+    }
+    A = power_mod(A,T,mod);
+    for(int u =1 ; u<=T ; ++u){
+        tmp = tmp*A %mod;
+        if(hash.count(tmp))return u*T-hash[tmp]+cnt;
+    }
+    return -1;
+}
+
+int main() {
+
+    LL x,y,z,k;
+    while (scanf("%lld%lld%lld",&x,&z,&k ) && z) {
+        y = bsgs(x,k,z);
+        if(y==-1)std::cout << "No Solution" << endl;
+        else std::cout << y << endl;
+    }
+    return 0;
+}
+```
+
+# 八、数论小练
+* codeforces  830C
+* codeforces  616E
