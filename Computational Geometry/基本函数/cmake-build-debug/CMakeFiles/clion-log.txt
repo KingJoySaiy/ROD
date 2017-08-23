@@ -1,0 +1,4 @@
+"C:\Program Files\JetBrains\CLion 2017.2.1\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "C:\Users\Joy\Documents\GitHub\R.O.D\Computational Geometry\Basic Function"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/Joy/Documents/GitHub/R.O.D/Computational Geometry/Basic Function/cmake-build-debug

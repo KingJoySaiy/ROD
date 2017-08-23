@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Joy/Documents/GitHub/R.O.D/Computational Geometry/Basic Function/head.h
+iostream
+-
+cstring
+-
+cmath
+-
+
+C:/Users/Joy/Documents/GitHub/R.O.D/Computational Geometry/Basic Function/main.cpp
+head.h
+C:/Users/Joy/Documents/GitHub/R.O.D/Computational Geometry/Basic Function/head.h
+

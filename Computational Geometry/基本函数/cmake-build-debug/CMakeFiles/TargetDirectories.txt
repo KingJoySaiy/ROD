@@ -1,0 +1,3 @@
+C:/Users/Joy/Documents/GitHub/R.O.D/Computational Geometry/Basic Function/cmake-build-debug/CMakeFiles/Basic_Function.dir
+C:/Users/Joy/Documents/GitHub/R.O.D/Computational Geometry/Basic Function/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Joy/Documents/GitHub/R.O.D/Computational Geometry/Basic Function/cmake-build-debug/CMakeFiles/rebuild_cache.dir
