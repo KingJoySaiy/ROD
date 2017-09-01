@@ -11,4 +11,4 @@
 * <a href="https://github.com/KingJoySaiy/R.O.D./blob/master/Number Theory/莫比乌斯反演.md">莫比乌斯反演</a><br>
 ## 二、计算几何
 * <a href="https://github.com/KingJoySaiy/R.O.D./tree/master/Computational Geometry/基本函数">基本函数</a><br>
-* <a href="https://github.com/KingJoySaiy/R.O.D./blob/master/Computational Geometry/凸包.md">凸包</a><br>
+* <a href="https://github.com/KingJoySaiy/R.O.D./blob/master/Computational Geometry/凸包与旋转卡壳.md">凸包与旋转卡壳</a><br>
