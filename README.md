@@ -13,3 +13,4 @@
 ## 二、计算几何
 * <a href="https://github.com/KingJoySaiy/R.O.D./tree/master/Computational Geometry/基本函数">基本函数</a><br>
 * <a href="https://github.com/KingJoySaiy/R.O.D./blob/master/Computational Geometry/凸包与旋转卡壳.md">凸包与旋转卡壳</a><br>
+* <a href="https://github.com/KingJoySaiy/R.O.D./blob/master/Computational Geometry/平面扫描.md">平面扫描</a><br>
