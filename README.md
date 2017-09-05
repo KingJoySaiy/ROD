@@ -10,6 +10,7 @@
 * <a href="https://github.com/KingJoySaiy/R.O.D./blob/master/Number Theory/素数合数测试.md">素数合数测试</a><br>
 * <a href="https://github.com/KingJoySaiy/R.O.D./blob/master/Number Theory/莫比乌斯反演.md">莫比乌斯反演</a><br>
 * <a href="https://github.com/KingJoySaiy/R.O.D./blob/master/Number Theory/高斯消元.md">高斯消元</a><br>
+* <a href="https://github.com/KingJoySaiy/R.O.D./blob/master/Number Theory/整数拆分.md">整数拆分</a><br>
 ## 二、计算几何
 * <a href="https://github.com/KingJoySaiy/R.O.D./tree/master/Computational Geometry/基本函数">基本函数</a><br>
 * <a href="https://github.com/KingJoySaiy/R.O.D./blob/master/Computational Geometry/凸包与旋转卡壳.md">凸包与旋转卡壳</a><br>
