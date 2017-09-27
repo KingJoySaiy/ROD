@@ -20,5 +20,6 @@
 ## 三、其他
 * <a href="https://github.com/KingJoySaiy/R.O.D./blob/master/other/物理题.md">物理题</a><br>
 * <a href="https://github.com/KingJoySaiy/R.O.D./blob/master/other/集合的二进制表示.md">集合的二进制表示</a><br>
+* <a href="https://github.com/KingJoySaiy/R.O.D./tree/master/challenges">Challenges</a><br>
 
 
