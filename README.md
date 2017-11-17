@@ -3,6 +3,19 @@
 
 飘逸的诗人在记忆中挥毫。
 ## 一、数论
+* [素数与欧几里德](Number Theory/素数与欧几里德.md)
+* [原根与阶](Number Theory/原根与阶.md)
+* [离散对数](Number Theory/离散对数.md)
+* [逆元与孙子定理](Number Theory/逆元与孙子定理.md)
+* [素数合数测试](Number Theory/素数合数测试.md)
+* [莫比乌斯反演](Number Theory/莫比乌斯反演.md)
+* [高斯消元](Number Theory/高斯消元.md)
+* [整数拆分](Number Theory/整数拆分.md)
+* [快速傅立叶变换](Number Theory/快速傅立叶变换.md)
+* [斐波那契](Number Theory/斐波那契.md)
+* [大整数类](Number Theory/大整数类.md)
+
+
 * <a href="https://github.com/KingJoySaiy/R.O.D./blob/master/Number Theory/素数与欧几里德.md">素数与欧几里德</a><br>
 * <a href="https://github.com/KingJoySaiy/R.O.D./blob/master/Number Theory/原根与阶.md">原根与阶</a><br>
 * <a href="https://github.com/KingJoySaiy/R.O.D./blob/master/Number Theory/离散对数.md">离散对数</a><br>
@@ -14,6 +27,7 @@
 * <a href="https://github.com/KingJoySaiy/R.O.D./blob/master/Number Theory/快速傅立叶变换.md">快速傅立叶变换</a><br>
 * <a href="https://github.com/KingJoySaiy/R.O.D./blob/master/Number Theory/斐波那契.md">斐波那契</a><br>
 * <a href="https://github.com/KingJoySaiy/R.O.D./blob/master/Number Theory/大整数类.md">大整数类</a><br>
+
 ## 二、计算几何
 * <a href="https://github.com/KingJoySaiy/R.O.D./tree/master/Computational Geometry/基本函数">基本函数</a><br>
 * <a href="https://github.com/KingJoySaiy/R.O.D./blob/master/Computational Geometry/凸包与旋转卡壳.md">凸包与旋转卡壳</a><br>
