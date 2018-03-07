@@ -1,5 +1,5 @@
 /*
- * POJ 1502 (×î¶ÌÂ·)
+ * POJ 1502 (æœ€çŸ­è·¯)
  */
  #include<iostream>
 #include<climits>
