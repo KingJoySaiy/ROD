@@ -1,28 +1,35 @@
 /*
  * POJ 1502 (最短路)
  */
-#include<iostream>
-#include<cstdlib>
+ #include<iostream>
 #include<climits>
+#include<cstdlib>
+#include<cstdio>
+#include<queue>
 using namespace std;
 
+typedef pair<int,int> PP;
 const int maxn=105;
-int cost[maxn][maxn],d[maxn],n;
-bool book[maxn];
+int n,cost[maxn][maxn],d[maxn];
 char a[5];
 
-void dij(){
+void Dijstra(int v){
 
-    fill(book,book+maxn,false);
     fill(d,d+maxn,INT_MAX);
-    d[1]=0;
-    while(1){
-        int t=-1;
-        for(int i=1;i<=n;i++) if(!book[i] and (t==-1 or d[i]<d[t])) t=i;
-        if(t==-1) break;
-        book[t]=true;
+    d[v]=0;
+
+    priority_queue<PP,vector<PP>,greater<PP> > que;
+    que.push(make_pair(0,v));    //first->cost second->to 按first升序取出
+
+    while(!que.empty()){
+        PP t=que.top(); que.pop();
+        int x=t.second;
+        if(d[x]<t.first) continue;
         for(int i=1;i<=n;i++)
-            if(cost[t][i]!=INT_MAX) d[i]=min(d[i],d[t]+cost[t][i]);
+            if(cost[x][i]!=INT_MAX and d[x]+cost[x][i]<d[i]){
+                d[i]=d[x]+cost[x][i];
+                que.push(make_pair(d[i],i));
+            }
     }
 }
 int main(){
@@ -38,7 +45,7 @@ int main(){
                 cost[i][j]=cost[j][i]=t;
             }
         }
-    dij();
+    Dijstra(1);
     int res=d[1];
     for(int i=2;i<=n;i++) res=max(res,d[i]);
     cout<<res<<endl;
