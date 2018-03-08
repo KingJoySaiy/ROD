@@ -1,3 +1,0 @@
-"C:\Program Files\JetBrains\CLion 2017.2.1\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\Basic_Function.dir/objects.a
-C:\PROGRA~2\CodeBlocks\MinGW\bin\ar.exe cr CMakeFiles\Basic_Function.dir/objects.a @CMakeFiles\Basic_Function.dir\objects1.rsp
-C:\PROGRA~2\CodeBlocks\MinGW\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\Basic_Function.dir/objects.a -Wl,--no-whole-archive  -o Basic_Function.exe -Wl,--out-implib,libBasic_Function.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Basic_Function.dir\linklibs.rsp
