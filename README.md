@@ -14,6 +14,7 @@
 * [快速傅立叶变换](/Number%20Theory/快速傅立叶变换.md)
 * [斐波那契](/Number%20Theory/斐波那契.md)
 * [大整数类](/Number%20Theory/大整数类.md)
+* [矩阵快速幂](/Number%20Theory/矩阵快速幂.md)
 
 ## 二、计算几何
 * [基本函数](/Computational%20Geometry/基本函数)
@@ -22,9 +23,9 @@
 * [叉积的应用](/Computational%20Geometry/叉积的应用.md)
 
 ## 三、其他
-* [集合的二进制表示](/other/集合的二进制表示)
-* [计数与概率](/other/计数与概率)
-* [物理题](/other/物理题)
-* [Challenges](/other/Challenges)
+* [集合的二进制表示](/other/集合的二进制表示.md)
+* [计数与概率](/other/计数与概率.md)
+* [物理题](/other/物理题.md)
+* [Challenges](/Challenges)
 
 
