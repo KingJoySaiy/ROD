@@ -14,7 +14,7 @@
 * [快速傅立叶变换](/Number%20Theory/快速傅立叶变换.md)
 * [斐波那契](/Number%20Theory/斐波那契.md)
 * [大整数类](/Number%20Theory/大整数类.md)
-* [矩阵快速幂](/Number%20Theory/矩阵快速幂.md)
+* [数列问题](/Number%20Theory/数列问题.md)
 
 ## 二、计算几何
 * [基本函数](/Computational%20Geometry/基本函数)
