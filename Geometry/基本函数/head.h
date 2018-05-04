@@ -33,10 +33,10 @@ struct Point{           //定义点(向量)
         return Vector(x - b.x, y - b.y);
     }
     double operator ^(const Vector &b) const {       //向量的叉积
-        return x*b.y - y*b.x;
+        return x * b.y - y * b.x;
     }
     double operator *(const Vector &b) const {       //向量的点积
-        return x*b.x + y*b.y;
+        return x * b.x + y * b.y;
     }
     Vector operator *(const double t) const {        //向量乘浮点数
         return Vector(t * x, t * y);
@@ -44,13 +44,13 @@ struct Point{           //定义点(向量)
     bool operator ==(const Point &b) const {
         return !dcmp(x - b.x) and !dcmp(y - b.y);
     }
-    double angle(Vector &b){            //两向量的夹角
-        return acos(*this * b) / len() / b.len();
+    double angle(Vector &b){           //两向量的夹角
+        return acos((*this * b) / len() / b.len());
     }
     void trans_XY(double B) {           //绕原点左旋B（弧度）
         double tx = x,ty = y;
-        x = tx*cos(B) - ty*sin(B);
-        y = tx*sin(B) + ty*cos(B);
+        x = tx * cos(B) - ty * sin(B);
+        y = tx * sin(B) + ty * cos(B);
     }
     Vector normal(){                    //返回向量的单位法线（左旋90度,长度归一）
         double l = len();
