@@ -44,12 +44,15 @@ struct Point{           //定义点(向量)
     bool operator ==(const Point &b) const {
         return !dcmp(x - b.x) and !dcmp(y - b.y);
     }
-    void trans_XY(double B) {    //绕原点左旋B（弧度）
+    double angle(Vector &b){            //两向量的夹角
+        return acos(*this * b) / len() / b.len();
+    }
+    void trans_XY(double B) {           //绕原点左旋B（弧度）
         double tx = x,ty = y;
         x = tx*cos(B) - ty*sin(B);
         y = tx*sin(B) + ty*cos(B);
     }
-    Vector normal(){    //返回向量的单位法线（左旋90度,长度归一）
+    Vector normal(){                    //返回向量的单位法线（左旋90度,长度归一）
         double l = len();
         return Vector(-y / l, x / l);
     }
