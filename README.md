@@ -26,7 +26,7 @@
 * [集合的二进制表示](/other/集合的二进制表示.md)
 * [计数与概率](/other/计数与概率.md)
 * [物理题](/other/物理题.md)
-* [最短路问题](/other/最短路问题.md)
+* [最短路](/other/最短路.md)
 * [Challenges](/Challenges)
 
 
