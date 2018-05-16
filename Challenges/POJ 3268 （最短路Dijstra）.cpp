@@ -1,5 +1,5 @@
 /*
- * POJ 3268 (最短路)
+ * POJ 3268 (最短路Dijstra)
  */
 #include<iostream>
 #include<algorithm>
