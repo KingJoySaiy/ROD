@@ -10,11 +10,8 @@
 * [素数合数测试](/Number%20Theory/素数合数测试.md)
 * [莫比乌斯反演](/Number%20Theory/莫比乌斯反演.md)
 * [高斯消元](/Number%20Theory/高斯消元.md)
-* [整数拆分](/Number%20Theory/整数拆分.md)
 * [快速傅立叶变换](/Number%20Theory/快速傅立叶变换.md)
-* [斐波那契](/Number%20Theory/斐波那契.md)
 * [大整数类](/Number%20Theory/大整数类.md)
-* [数列问题](/Number%20Theory/数列问题.md)
 
 ## 二、计算几何
 * [基本函数](/Geometry/基本函数)
@@ -23,12 +20,13 @@
 * [叉积的应用](/Geometry/叉积的应用.md)
 
 ## 三、组合数学
-整数拆分，计数与概率...
+* [斐波那契](/Combinatorics/斐波那契.md)
+* [计数与概率](/Combinatorics/计数与概率.md)
+* [数列问题](/Combinatorics/数列问题.md)
+* [整数拆分](/Combinatorics/整数拆分.md)
 
 ## 四、其他
 * [集合的二进制表示](/other/集合的二进制表示.md)
-* [计数与概率](/other/计数与概率.md)
-* [二分](/other/二分.md)
 * [物理题](/other/物理题.md)
 * [最短路](/other/最短路.md)
 * [Challenges](/Challenges)
