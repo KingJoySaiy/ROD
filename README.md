@@ -12,6 +12,7 @@
 * [高斯消元](/Number%20Theory/高斯消元.md)
 * [快速傅立叶变换](/Number%20Theory/快速傅立叶变换.md)
 * [大整数类](/Number%20Theory/大整数类.md)
+* [拉格朗日插值](/Number%20Theory/拉格朗日插值.md)
 
 ## 二、计算几何
 * [基本函数](/Geometry/基本函数)
