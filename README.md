@@ -11,7 +11,6 @@
 * [莫比乌斯反演](/Number%20Theory/莫比乌斯反演.md)
 * [高斯消元](/Number%20Theory/高斯消元.md)
 * [快速傅立叶变换](/Number%20Theory/快速傅立叶变换.md)
-* [大整数类](/Number%20Theory/大整数类.md)
 * [拉格朗日插值](/Number%20Theory/拉格朗日插值.md)
 
 ## 二、计算几何
@@ -31,8 +30,10 @@
 
 ## 四、其他
 * [集合的二进制表示](/other/集合的二进制表示.md)
+* [大整数类](/other/大整数类.md)
 * [外挂整理](/other/外挂整理.md)
 * [数位dp](/other/数位dp.md)
+* [二分与三分](/other/二分与三分.md)
 * [物理题](/other/物理题.md)
 * [最短路](/other/最短路.md)
 * [Challenges](/Challenges)
