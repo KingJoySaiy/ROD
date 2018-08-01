@@ -31,6 +31,8 @@
 
 ## 四、其他
 * [集合的二进制表示](/other/集合的二进制表示.md)
+* [外挂整理](/other/外挂整理.md)
+* [数位dp](/other/数位dp.md)
 * [物理题](/other/物理题.md)
 * [最短路](/other/最短路.md)
 * [Challenges](/Challenges)
