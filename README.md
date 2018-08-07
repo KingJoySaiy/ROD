@@ -25,8 +25,9 @@
 * [概率与积分](/Combinatorics/概率与积分.md)
 * [数列问题](/Combinatorics/数列问题.md)
 * [整数拆分](/Combinatorics/整数拆分.md)
-* [阶乘与排列组合](/Combinatorics/阶乘与排列组合.md)
+* [阶乘与排列组合数](/Combinatorics/阶乘与排列组合数.md)
 * [容斥原理](/Combinatorics/容斥原理.md)
+* [排列组合基本定理](/Combinatorics/排列组合基本定理.md)
 
 ## 四、其他
 * [集合的二进制表示](/other/集合的二进制表示.md)
