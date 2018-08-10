@@ -14,7 +14,7 @@
 * [拉格朗日插值](/Number%20Theory/拉格朗日插值.md)
 
 ## 二、计算几何
-* [基本函数](/Geometry/基本函数)
+* [基本函数](/Geometry/基本函数.md)
 * [凸包与旋转卡壳](/Geometry/凸包与旋转卡壳.md)
 * [平面扫描](/Geometry/平面扫描.md)
 * [叉积的应用](/Geometry/叉积的应用.md)
