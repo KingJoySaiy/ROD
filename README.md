@@ -4,8 +4,8 @@
 飘逸的诗人在记忆中挥毫。
 ## 一、数论
 * [素数与欧几里德](/Number%20Theory/素数与欧几里德.md)
-* [原根与阶](/Number%20Theory/原根与阶.md)
-* [离散对数](/Number%20Theory/离散对数.md)
+* [积性函数](/Number%20Theory/积性函数.md)
+* [原根与离散对数](/Number%20Theory/原根与离散对数.md)
 * [逆元与孙子定理](/Number%20Theory/逆元与孙子定理.md)
 * [素数合数测试](/Number%20Theory/素数合数测试.md)
 * [莫比乌斯反演](/Number%20Theory/莫比乌斯反演.md)
