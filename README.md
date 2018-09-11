@@ -38,6 +38,7 @@
 * [外挂整理](/other/外挂整理.md)
 * [数位dp](/other/数位dp.md)
 * [二分与三分](/other/二分与三分.md)
+* [Trie树](/other/Trie树.md)
 * [物理题](/other/物理题.md)
 * [最短路](/other/最短路.md)
 * [Challenges](/Challenges)
