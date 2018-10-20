@@ -21,7 +21,6 @@
 * [凸包与旋转卡壳](/Geometry/凸包与旋转卡壳.md)
 * [平面扫描](/Geometry/平面扫描.md)
 * [叉积的应用](/Geometry/叉积的应用.md)
-* [面积交](/Geometry/面积交.md)
 
 ## 三、组合数学
 * [常用定理](/Combinatorics/常用定理.md)
