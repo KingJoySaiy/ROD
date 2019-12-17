@@ -55,4 +55,4 @@ int main() {
 }
 ```
 
-* 例题：<a href = "https://github.com/KingJoySaiy/Iterator/blob/master/%E5%A4%9A%E6%A0%A1%E8%AE%AD%E7%BB%83/2018%20Nowcoder%20Contest%204/Nowcoder%204th.md">2018牛客多校第4场C题</a><br>
+* 例题：<a href = "https://github.com/KingJoySaiy/Iterator/blob/master/%E5%A4%9A%E6%A0%A1%E8%AE%AD%E7%BB%83/2018%20Nowcoder%20Contest%203-4/Nowcoder%203rd-4th.md">2018牛客多校第4场C题</a><br>
