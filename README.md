@@ -1,7 +1,7 @@
 233
 ======
 
-飘逸的诗人在记忆中挥毫。
+And peace to this young warrior without sounds of guns.
 ## 一、数论
 * [素数与欧几里德](/Number%20Theory/素数与欧几里德.md)
 * [积性函数](/Number%20Theory/积性函数.md)
@@ -42,4 +42,4 @@
 * [最短路](/other/最短路.md)
 * [Challenges](/Challenges)
 
-
+飘逸的诗人在记忆中挥毫。
