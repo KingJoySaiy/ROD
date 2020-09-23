@@ -41,5 +41,3 @@ And peace to this young warrior without sounds of guns.
 * [物理题](/other/物理题.md)
 * [最短路](/other/最短路.md)
 * [Challenges](/Challenges)
-
-飘逸的诗人在记忆中挥毫。
